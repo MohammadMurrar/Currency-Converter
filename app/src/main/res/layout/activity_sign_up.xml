@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="108dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:fontFamily="serif"
+            android:textColor="@color/black"
+            android:textSize="34sp"
+            android:layout_gravity="center"
+            android:text="@string/txt_HEADER_sign_up"
+            android:textStyle="bold|italic" />
+
+    </LinearLayout>
+
+    <TableRow>
+
+        <TextView
+            android:text="@string/SIGNUP_mail"
+            style="@style/SIGNUP_txtViews_Styles" />
+
+        <EditText
+            android:hint="@string/enter_your_mail"
+            android:id="@+id/edtSignUpMail"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            style="@style/EDT_LOGIN_SIGNUP_STYLES"
+            />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:text="@string/user_name"
+            style="@style/SIGNUP_txtViews_Styles" />
+
+        <EditText
+            android:hint="@string/enter_your_name"
+            android:id="@+id/edtSignUpName"
+            android:inputType="textPersonName"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            style="@style/EDT_LOGIN_SIGNUP_STYLES"
+            />
+    </TableRow>
+    <TableRow>
+
+        <TextView
+            android:text="@string/password"
+            style="@style/SIGNUP_txtViews_Styles" />
+
+        <EditText
+            android:hint="@string/enter_your_password"
+            android:id="@+id/edtSignUpPass"
+            android:inputType="textPassword"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            style="@style/EDT_LOGIN_SIGNUP_STYLES"
+            />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:text="@string/age"
+            style="@style/SIGNUP_txtViews_Styles" />
+
+        <EditText
+            android:hint="@string/enter_your_age"
+            android:id="@+id/edtSignUpAge"
+            android:inputType="number"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            style="@style/EDT_LOGIN_SIGNUP_STYLES"
+            />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:text="@string/phone_no"
+            style="@style/SIGNUP_txtViews_Styles" />
+
+        <EditText
+            android:hint="@string/enter_phone_number"
+            android:id="@+id/edtSignUpPhone"
+            android:inputType="number"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            style="@style/EDT_LOGIN_SIGNUP_STYLES"
+            />
+    </TableRow>
+
+    <LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/Gander"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbMale"
+                style="@style/SIGNUP_txtViews_Styles"
+                android:text="@string/male" />
+
+            <RadioButton
+                android:id="@+id/rbFemale"
+                style="@style/SIGNUP_txtViews_Styles"
+                android:text="@string/female" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="108dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnSignUp"
+            style="@style/btn_LOGIN_and_SIGNUP_styles"
+            android:layout_width="wrap_content"
+            android:layout_height="67dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="@string/sign_up"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.681" />
+    </LinearLayout>
+
+</TableLayout>
